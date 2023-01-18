@@ -6,8 +6,67 @@ body {
 #demo {
   padding: 50px 0;
 }
-#demo .box {
+#demo .box .minibox {
+  position: absolute;
+  transform: translate(170px, 90px);
+  width: 100px;
+  height: 100px;
+  border: 2px solid #3721df;
+  background-color: #003082;
+  opacity: 0.7;
+  transition: 1s;
+}
+#demo .box .minibox:hover {
+  width: 120px;
+  height: 120px;
+  transform: translate(160px, 85px);
+}
+#demo .box .minibox1 {
+  position: absolute;
+  transform: translate(600px, 95px);
+  width: 100px;
+  height: 100px;
+  border: 2px solid #3721df;
+  background-color: #003082;
+  opacity: 0.7;
+  transition: 1s;
+}
+#demo .box .minibox1:hover {
+  width: 120px;
+  height: 120px;
+  transform: translate(590px, 85px);
+}
+#demo .box .minibox2 {
+  position: absolute;
+  transform: translate(1030px, 90px);
+  width: 100px;
+  height: 100px;
+  border: 2px solid #3721df;
+  background-color: #003082;
+  opacity: 0.7;
+  transition: 1s;
+}
+#demo .box .minibox2:hover {
+  width: 120px;
+  height: 120px;
+  transform: translate(1020px, 85px);
+}
+#demo .box2 {
   display: flex;
+  justify-content: space-around;
+}
+#demo .box2 .border {
+  width: 190px;
+  height: 190px;
+  border: 3px solid #00ab2b;
+  background-color: #2375af;
+  margin: 50px;
+}
+#demo .box2 .border h1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  margin: 80px;
 }
 #demo2 .box .minibox {
   width: 250px;
