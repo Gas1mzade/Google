@@ -4,68 +4,38 @@ body {
 }
 
 #demo {
-  padding: 50px 0;
-  display: flex;
+  padding: 60px;
 }
-#demo .box .minibox, #demo .box .minibox1, #demo .box .minibox2 {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  padding: 50px 50px;
-  width: 100px;
-  height: 100px;
-  border: 2px solid #3721df;
-  background-color: #003082;
-  opacity: 0.7;
+#demo .box {
+  border: 2px solid #08742c;
+  height: 180px;
+  width: 180px;
+  background-color: #3e4e9f;
 }
 #demo .box .minibox {
-  transform: translate(170px, 90px);
-  transition: 1s;
-}
-#demo .box .minibox:hover {
-  width: 150px;
-  height: 150px;
-  transform: translate(145px, 70px);
-}
-#demo .box .minibox1 {
-  transform: translate(600px, 95px);
-  transition: 1s;
-}
-#demo .box .minibox1:hover {
-  width: 150px;
-  height: 150px;
-  transform: translate(575px, 70px);
-}
-#demo .box .minibox2 {
-  transform: translate(1030px, 90px);
-  transition: 1s;
-}
-#demo .box .minibox2:hover {
-  width: 150px;
-  height: 150px;
-  transform: translate(1005px, 70px);
-}
-#demo .box2 {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  margin: 42px;
+  background-color: #16187f;
+  transition: 2s;
 }
-#demo .box2 .border {
-  width: 190px;
-  height: 190px;
-  border: 3px solid #00ab2b;
-  background-color: #2375af;
-  margin: 50px;
-}
-#demo .box2 .border h1 {
+#demo .box .minibox h1 {
   color: white;
   font-size: 20px;
-  position: absolute;
-  margin: 80px;
+  font-weight: 700;
+}
+#demo .box .minibox:hover {
+  width: 130px;
+  height: 130px;
+  margin: 22px;
+  padding: 22px;
 }
 #demo .box3 {
   display: flex;
   justify-content: space-around;
-  padding: 70px 0;
+  padding: 50px 0;
 }
 #demo .box3 .minibox {
   width: 160px;
@@ -76,19 +46,41 @@ body {
 }
 #demo .box3 .minibox h1 {
   color: white;
-  margin: 8px 0 0 53px;
+  margin: 5px 0 0 -1px;
   font-size: 20px;
 }
 #demo .box3 .minibox:hover {
   background-color: #651058;
   cursor: pointer;
 }
-#demo .box4 {
-  display: flex;
-  justify-content: space-around;
-  padding: 70px 0;
+@media screen and (max-width: 800px) {
+  #demo .box3 .minibox {
+    width: 120px;
+    height: 60px;
+    background-color: rgba(95, 96, 188, 0.7529411765);
+    border: 1px solid rgba(95, 96, 188, 0.7529411765);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: 500;
+  }
 }
-#demo .box4 .minibox {
+@media screen and (max-width: 500px) {
+  #demo .box3 .minibox {
+    width: 70px;
+    height: 60px;
+    border: 1px solid #7e7979;
+    background-color: #331528;
+    display: flex;
+    align-items: center;
+  }
+  #demo .box3 .minibox h1 {
+    font-size: 10px;
+  }
+}
+#demo .box4 {
+  padding: 30px 0;
+  justify-content: space-around;
   width: 200px;
   height: 200px;
   background-color: #a94729;
@@ -96,13 +88,21 @@ body {
   border-radius: 100px;
   transition: 1s;
 }
-#demo .box4 .minibox h1 {
+#demo .box4 h1 {
   margin: 80px;
   color: white;
   font-size: 25px;
 }
-#demo .box4 .minibox:hover {
+#demo .box4:hover {
   border-radius: 31px;
+}
+@media screen and (max-width: 800px) {
+  #demo .box4 {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(173, 167, 65, 0.7529411765);
+    border-radius: 100px;
+  }
 }
 
 #demo2 .box .minibox {

@@ -1,58 +1,32 @@
 #demo
-    padding: 50px 0
-    display: flex
+    padding: 60px
     .box
-        .minibox,.minibox1,.minibox2
-            display: flex
-            justify-content: space-between
-            position: absolute
-            padding: 50px 50px
-            width: 100px
-            height: 100px
-            border: 2px solid #3721df
-            background-color: #003082
-            opacity: 0.7
+        border: 2px solid #08742c
+        height: 180px
+        width: 180px
+        background-color: #3e4e9f
         .minibox
-            transform: translate(170px , 90px)
-            transition: 1s
-            &:hover
-                width: 150px
-                height: 150px
-                transform: translate(145px , 70px)
-        .minibox1
-            transform: translate(600px , 95px)
-            transition: 1s
-            &:hover
-                width: 150px
-                height: 150px
-                transform: translate(575px , 70px)
-        .minibox2
-            transform: translate(1030px , 90px)
-            transition: 1s
-            &:hover
-                width: 150px
-                height: 150px
-                transform: translate(1005px , 70px)
-
-    .box2
-        display: flex
-        justify-content: space-around
-        .border
-            width: 190px
-            height: 190px
-            border: 3px solid #00ab2b
-            background-color: #2375af
-            margin: 50px
+            display: flex
+            justify-content: center
+            width: 90px
+            height: 90px
+            margin: 42px
+            background-color: #16187f
+            transition: 2s
             h1
                 color: #ffff
                 font-size: 20px
-                position: absolute
-                margin: 80px
+                font-weight: 700
+            &:hover
+                width: 130px
+                height: 130px
+                margin: 22px
+                padding: 22px
 
     .box3
         display: flex
         justify-content: space-around
-        padding: 70px 0
+        padding: 50px 0
         .minibox
             width: 160px
             height: 85px
@@ -61,26 +35,51 @@
             transition: 1s
             h1
                 color: #ffff
-                margin: 8px 0 0 53px
+                margin: 5px 0 0 -1px
                 font-size: 20px
             &:hover
                 background-color: #651058
                 cursor: pointer
-    .box4
-        display: flex
-        justify-content: space-around
-        padding: 70px 0
-        .minibox
-            width: 200px
-            height: 200px
-            background-color: #a94729
-            border: 1px solid #a94729
-            border-radius: 100px
-            transition: 1s
+        @media screen and ( max-width: 800px )
+            .minibox
+                width: 120px
+                height: 60px
+                background-color: #5f60bcc0
+                border: 1px solid #5f60bcc0
+                display: flex
+                align-items: center
+                border-radius: 5px
+                font-weight: 500
 
-            h1
-                margin: 80px
-                color: #ffff
-                font-size: 25px
-            &:hover
-                border-radius: 31px
+        @media screen and ( max-width: 500px  )
+            .minibox
+                width: 70px
+                height: 60px
+                border: 1px solid #7e7979
+                background-color: #331528
+                display: flex
+                align-items: center
+                h1
+                    font-size: 10px
+
+    .box4
+        padding: 30px 0
+        justify-content: space-around
+        width: 200px
+        height: 200px
+        background-color: #a94729
+        border: 1px solid #a94729
+        border-radius: 100px
+        transition: 1s
+        h1
+            margin: 80px
+            color: #ffff
+            font-size: 25px
+        &:hover
+            border-radius: 31px
+    @media screen and ( max-width: 800px )
+        .box4
+            width: 60px
+            height: 60px
+            background-color: #ada741c0
+            border-radius: 100px
