@@ -5,15 +5,21 @@ body {
 
 #demo {
   padding: 50px 0;
+  display: flex;
 }
-#demo .box .minibox {
+#demo .box .minibox, #demo .box .minibox1, #demo .box .minibox2 {
+  display: flex;
+  justify-content: space-between;
   position: absolute;
-  transform: translate(170px, 90px);
+  padding: 50px 50px;
   width: 100px;
   height: 100px;
   border: 2px solid #3721df;
   background-color: #003082;
   opacity: 0.7;
+}
+#demo .box .minibox {
+  transform: translate(170px, 90px);
   transition: 1s;
 }
 #demo .box .minibox:hover {
@@ -22,13 +28,7 @@ body {
   transform: translate(145px, 70px);
 }
 #demo .box .minibox1 {
-  position: absolute;
   transform: translate(600px, 95px);
-  width: 100px;
-  height: 100px;
-  border: 2px solid #3721df;
-  background-color: #003082;
-  opacity: 0.7;
   transition: 1s;
 }
 #demo .box .minibox1:hover {
@@ -37,13 +37,7 @@ body {
   transform: translate(575px, 70px);
 }
 #demo .box .minibox2 {
-  position: absolute;
   transform: translate(1030px, 90px);
-  width: 100px;
-  height: 100px;
-  border: 2px solid #3721df;
-  background-color: #003082;
-  opacity: 0.7;
   transition: 1s;
 }
 #demo .box .minibox2:hover {
@@ -87,6 +81,7 @@ body {
 }
 #demo .box3 .minibox:hover {
   background-color: #651058;
+  cursor: pointer;
 }
 #demo .box4 {
   display: flex;
@@ -99,6 +94,15 @@ body {
   background-color: #a94729;
   border: 1px solid #a94729;
   border-radius: 100px;
+  transition: 1s;
+}
+#demo .box4 .minibox h1 {
+  margin: 80px;
+  color: white;
+  font-size: 25px;
+}
+#demo .box4 .minibox:hover {
+  border-radius: 31px;
 }
 
 #demo2 .box .minibox {
